@@ -1,0 +1,126 @@
+body {
+    background-image: url(../images/gameheader.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: cover;
+    margin: 0%;
+}
+
+.characterWrapper {
+    width: 75%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#gameMessage {
+    text-align: center;
+    font-size: 40px;
+}
+
+#choose-enemy-button {
+    visibility: hidden;
+}
+
+#restart-button {
+    visibility: hidden;
+}
+
+#turn-counter {
+    font-size: 150%;
+}
+
+.character {
+    width: 140px;
+    margin: 0px 40px 0px 40px;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.character img {
+    border: none;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 200px;
+}
+
+.character-name{
+    text-align: center;
+    text-transform: capitalize;
+    line-height: 30px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+}
+
+.character-health {
+    text-align: center;
+}
+
+.attack {
+    text-align: center;
+}
+
+.action {
+    margin: 15px 0px;
+}
+
+#attack-button{
+    visibility: hidden;
+}
+
+.btn {
+    background: #000;
+    color: whitesmoke;
+}
+
+.enemy{
+    width: 220px;
+    margin: 5px;
+    border-style: solid;
+    border-color: blue;
+    border-width: 1px;
+    cursor: pointer;
+    display: inline-block;
+    background-color: blueviolet;
+}
+
+#attacker {
+    padding: 5px;
+}
+
+.target-enemy {
+    background-color: red;
+    color: whitesmoke;
+}
+
+#available-to-attack-section {
+    float: right;
+}
+
+#available-to-attack-section img {
+    height: 100px;
+}
+
+#defender-name {
+    text-align: center;
+}
+
+#defender-image {
+    padding: 0px 16px;
+    margin: 3px 0px;
+}
+
+#defender-health {
+    text-align: center;
+}
+
+@media only screen and (max-device-width: 768px) {
+    .character {
+        display: block;
+        height: 140px;
+    }
+    #gameMessage {
+        font-size: 14px;
+    }
+}
+
